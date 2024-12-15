@@ -24,7 +24,7 @@ public class Login extends JFrame {
         add (cardno);
 
         JTextField cardTextField = new JTextField();
-        cardTextField.setBounds(300, 150, 250, 30);
+        cardTextField.setBounds(300, 150, 230, 30);
         add(cardTextField);
 
         JLabel pin = new JLabel("PIN:");
@@ -33,12 +33,30 @@ public class Login extends JFrame {
         add (pin);
 
         JTextField pinTextField = new JTextField();
-        pinTextField.setBounds(300, 220, 250,30);
+        pinTextField.setBounds(300, 220, 230,30);
         add(pinTextField);
+
+        JButton login = new JButton("Sign In");
+        login.setBounds(300, 300, 100, 30);
+        login.setBackground(Color.BLACK);
+        login.setForeground(Color.WHITE);
+        add(login);
+
+        JButton clear = new JButton("Clear");
+        clear.setBounds(430, 300, 100, 30);
+        clear.setBackground(Color.BLACK);
+        clear.setForeground(Color.WHITE);
+        add(clear);
+
+        JButton signup = new JButton("Sign Up");
+        signup.setBounds(300,350, 230, 30);
+        signup.setBackground(Color.BLACK);
+        signup.setForeground(Color.WHITE);
+        add(signup);
 
         getContentPane().setBackground(Color.WHITE);
 
-        setSize(800, 400);
+        setSize(800, 480);
         setVisible(true);
         setLocation(350, 200);
     }
